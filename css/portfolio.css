@@ -1,0 +1,457 @@
+@charset "UTF-8";
+body {
+  background-color: #f3f3f3;
+  margin: 0;
+  background: #eee;
+  font-family: "Ubuntu", "微軟正黑體";
+}
+
+nav .nav_cus .hvr-underline-from-center:before {
+  background: white;
+  height: 2px;
+}
+
+nav .nav_cus .hvr-underline-from-left:before {
+  background: #eeeeee;
+  height: 2px;
+}
+
+nav .nav_cus .hvr-underline-from-left:active {
+  background-color: #343a40;
+}
+
+main {
+  position: relative;
+}
+
+main .go_to_top {
+  position: fixed;
+  bottom: 30px;
+  right: 40px;
+  opacity: 0;
+  -webkit-transform: translateY(10px);
+          transform: translateY(10px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+main .go_to_top a {
+  color: #343a40;
+}
+
+main .go_to_top.visible {
+  opacity: 1;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+main .about {
+  width: 100%;
+  background-color: #eeeeee;
+  height: 100vh;
+}
+
+main .about .container .about_left {
+  width: 100%;
+  height: 100vh;
+  background-color: #f5a7a7;
+  height: auto;
+  padding: 30px 5px;
+}
+
+main .about .container .about_left .about_left_top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+  width: 100%;
+}
+
+main .about .container .about_left .about_left_top .about_photo {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #f5a7a7;
+  /* background-image: url('/img/cat.jpg'); */
+  background-position: center;
+  background-size: cover;
+}
+
+main .about .container .about_left .about_left_bottom {
+  margin-top: 30px;
+}
+
+main .about .container .about_left .about_left_bottom .content .content_name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: white;
+  text-shadow: #474747 2px 1px 1px;
+}
+
+main .about .container .about_left .about_left_bottom .content .content_detail {
+  padding: 10px 50px;
+  color: white;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main .about .container .about_left .about_left_bottom .content .content_detail span {
+  line-height: 30px;
+  color: white;
+}
+
+main .about .container .about_left .content_about {
+  padding: 5px 30px;
+}
+
+main .about .container .about_left .content_about h3 {
+  padding-top: 20px;
+  text-align: center;
+  color: white;
+  margin-bottom: 20px;
+  text-shadow: #474747 2px 1px 1px;
+}
+
+main .about .container .about_left .content_about .content_about_detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .about .container .about_left .content_about .content_about_detail span {
+  font-size: 17px;
+  color: white;
+  text-align: center;
+}
+
+main .about .container .about_right {
+  padding: 20px 40px;
+}
+
+main .about .container .about_right .work {
+  float: left;
+  display: block;
+  opacity: 0.7;
+}
+
+main .about .container .about_right .work a {
+  text-decoration: none;
+  color: #555;
+  display: block;
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+main .about .container .about_right .work ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+main .about .container .about_right .work ul li {
+  position: relative;
+  margin-left: 15px;
+  padding-left: 29px;
+  padding-bottom: 15px;
+}
+
+main .about .container .about_right .work ul li span {
+  -webkit-transition-duration: 0.3s;
+          transition-duration: 0.3s;
+}
+
+main .about .container .about_right .work ul li:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border: 8px solid #3d405b;
+  background: #fcfcfc;
+  border-radius: 50%;
+  left: -2px;
+  z-index: 1;
+}
+
+main .about .container .about_right .work ul li:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  background: #3d405b;
+  left: 5px;
+  top: 0;
+}
+
+main .about .container .about_right .work ul li:hover::before {
+  -webkit-animation: circle 1.2s infinite;
+          animation: circle 1.2s infinite;
+}
+
+main .about .container .about_right .work ul li:hover span {
+  color: #e07a5f;
+}
+
+main .about .container .about_right .work ul li:first-of-type {
+  padding-bottom: 10px;
+}
+
+main .about .container .about_right .work ul li:first-of-type:before {
+  width: 10px;
+  height: 10px;
+  left: -2px;
+}
+
+main .about .container .about_right .work ul li:first-of-type:after {
+  border-radius: 1.5px;
+}
+
+main .about .container .about_right .skills {
+  clear: both;
+  color: #5F6264;
+}
+
+main .about .container .about_right .skills .container .row {
+  margin-bottom: 10px;
+}
+
+main .about .container .about_right .skills .container .row .col_title {
+  color: lightcoral;
+  margin-left: 6px;
+}
+
+main .about .container .about_right .skills .container .row .bar_text {
+  text-align: left;
+  padding-left: 38px;
+}
+
+main .about .container .about_right .skills .container .row .col_progress_cus {
+  margin-top: 7px;
+}
+
+main .about .container .about_right .skills .container .row .col_progress_cus .progress {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #bbbbbb;
+}
+
+main .about .container .about_right .skills .container .row .col_progress_cus .progress .bg-lightcoral {
+  background-color: lightcoral;
+}
+
+main .about .container .about_right .softs {
+  color: #5F6264;
+}
+
+main .about .container .about_right .softs .container .row {
+  margin-bottom: 10px;
+}
+
+main .about .container .about_right .softs .container .row .col_title {
+  color: lightcoral;
+  margin-left: 6px;
+}
+
+main .about .container .about_right .softs .container .row .col_progress_cus {
+  margin-top: 7px;
+}
+
+main .about .container .about_right .softs .container .row .col_progress_cus .progress {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  background-color: #bbbbbb;
+}
+
+main .about .container .about_right .softs .container .row .col_progress_cus .progress .bar_text {
+  text-align: left;
+  padding-left: 38px;
+}
+
+main .about .container .about_right .softs .container .row .col_progress_cus .progress .bg-lightcoral {
+  background-color: lightcoral;
+}
+
+main .about .container .about_right .educate_cert {
+  color: #5F6264;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@media (max-width: 1200px) {
+  main .about .container .about_right .educate_cert span {
+    font-size: 14px;
+  }
+}
+
+main .about .container .about_right .educate_cert .education ul {
+  position: relative;
+}
+
+main .about .container .about_right .educate_cert .education ul li {
+  line-height: 1;
+  padding: 0.5em 0;
+  list-style-type: none !important;
+}
+
+main .about .container .about_right .educate_cert .education ul li::before {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  content: "\f138";
+  position: absolute;
+  left: 1em;
+  color: lightcoral;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+main .about .container .about_right .educate_cert .certificate ul {
+  position: relative;
+}
+
+main .about .container .about_right .educate_cert .certificate ul li {
+  line-height: 1;
+  padding: 0.5em 0;
+  list-style-type: none !important;
+}
+
+main .about .container .about_right .educate_cert .certificate ul li::before {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  content: "\f138";
+  position: absolute;
+  left: 1em;
+  color: lightcoral;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+main .about .container .about_right .accom_vol .accomplishments {
+  color: #5F6264;
+}
+
+@media (max-width: 1200px) {
+  main .about .container .about_right .accom_vol .accomplishments h3 {
+    font-size: 24px;
+  }
+}
+
+main .about .container .about_right .accom_vol .accomplishments h5 {
+  font-size: 20px;
+}
+
+main .about .container .about_right .accom_vol .accomplishments h5::after {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  content: "\f103";
+  position: absolute;
+  color: lightcoral;
+  vertical-align: middle;
+  font-weight: 900;
+  padding-left: 10px;
+}
+
+main .about .container .about_right .accom_vol .accomplishments ul {
+  position: relative;
+}
+
+main .about .container .about_right .accom_vol .accomplishments ul li {
+  line-height: 1;
+  padding: 5px 0;
+  list-style-type: none !important;
+}
+
+main .about .container .about_right .accom_vol .accomplishments ul li::before {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  content: "\f058";
+  position: absolute;
+  left: 1em;
+  color: lightcoral;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+main .about .container .about_right .accom_vol .volunteer {
+  color: #5F6264;
+}
+
+@media (max-width: 1200px) {
+  main .about .container .about_right .accom_vol .volunteer h3 {
+    font-size: 24px;
+  }
+}
+
+main .about .container .about_right .accom_vol .volunteer ul {
+  position: relative;
+}
+
+main .about .container .about_right .accom_vol .volunteer ul li {
+  line-height: 1;
+  padding: 5px 0;
+  list-style-type: none !important;
+}
+
+main .about .container .about_right .accom_vol .volunteer ul li::before {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  content: "\f138";
+  position: absolute;
+  left: 1em;
+  color: lightcoral;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+main .about .container .about_right .statement {
+  color: #5F6264;
+}
+
+.swiper-container {
+  width: 80%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-container .swiper-slide {
+  width: 500px;
+}
+
+main .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto;
+  width: 100%;
+}
+
+main .cards .card {
+  margin: 8px 8px;
+  padding: 10px 0px;
+  position: relative;
+}
+
+main .cards .card .btn {
+  position: absolute;
+  bottom: 10px;
+}
+/*# sourceMappingURL=portfolio.css.map */
