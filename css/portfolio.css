@@ -450,8 +450,13 @@ main .cards .card {
   position: relative;
 }
 
-main .cards .card .btn {
-  position: absolute;
-  bottom: 10px;
+main .cards .card .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .cards .card .btns .btn {
+  margin-right: 15px;
 }
 /*# sourceMappingURL=portfolio.css.map */

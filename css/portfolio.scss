@@ -486,9 +486,13 @@ main {
             padding: 10px 0px;
             position: relative;
 
-            .btn {
-                position: absolute;
-                bottom: 10px;
+            .btns {
+                display: flex;
+                
+                .btn{
+                    margin-right: 15px;
+                }
+
             }
         }
     }
